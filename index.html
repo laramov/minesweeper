@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minesweeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>MINESWEEPER</h1>
+    <br />
+    <div id="mainDiv">
+      <div id="allText">
+    <form>
+      <button
+        id="save_game_button"
+        type="button"
+      >
+        Save game for later
+      </button>
+      <button
+      id="restore_game_button"
+      type="button"
+    >
+      Restore last game
+    </button>
+    </form>
+    <br />
+    <div>   
+      <div>
+        <div>
+          <label for="new_rows">Rows:</label>
+          <input type="number" id="new_rows" placeholder="9" value="9" />
+          <label for="new_cols">Cols:</label>
+          <input type="number" id="new_cols" placeholder="9" value="9"  />
+          <br>
+           <div>
+             <br>
+            Left Click to reveal a cell, Right Click to flag a cell
+           </div>
+        </div>
+        <br>
+        <button id="new_game_button" type="button" >Change board size!</button>
+      </div>
+    </div>
+      <br>
+    <div id="board"></div>
+  </div>
+    <script src="main.js"></script>
+    <br><br>
+    <footer>Hecho por Lara Movsovich</footer>
+  </body>
+</html>
